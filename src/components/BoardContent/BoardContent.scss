@@ -1,0 +1,7 @@
+@import '_setting.scss';
+
+.board-content {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 $gap $gap;
+}

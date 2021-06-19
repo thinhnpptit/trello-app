@@ -1,0 +1,54 @@
+@import '_setting.scss';
+$list-bg-color: #ebecf0;
+$colunm-header-height: 36px;
+$colunm-footer-height: 36px;
+$colunm-border-radius: 5px;
+
+.column {
+  flex: 0 0 auto;
+  width: 300px;
+  height: calc(100% - #{$gap});
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  > * {
+    background-color: $list-bg-color;
+    color: #333;
+    padding: 0 8px;
+  }
+  header {
+    padding-left: 15px;
+    height: $colunm-header-height;
+    line-height: $colunm-header-height;
+    font-size: 16px;
+    font-weight: bold;
+    border-top-left-radius: $colunm-border-radius;
+    border-top-right-radius: $colunm-border-radius;
+  }
+  footer {
+    padding-left: 10px;
+    height: $colunm-footer-height;
+    line-height: $colunm-footer-height;
+    font-size: 16px;
+    border-bottom-left-radius: $colunm-border-radius;
+    border-bottom-right-radius: $colunm-border-radius;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    max-height: calc(
+      100% - #{$colunm-header-height} - #{$colunm-footer-height}
+    );
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width: 11px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.24);
+      border-radius: 5px solid $list-bg-color;
+    }
+  }
+}
