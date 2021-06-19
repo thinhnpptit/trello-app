@@ -1,18 +1,20 @@
-import "./App.scss";
+import React from 'react';
+import './App.scss';
+import AppBar from 'components/AppBar/AppBar';
 
 function App() {
   return (
-    <div className="trello-master">
-      <nav className="navbar app">App bar</nav>
-      <nav className="navbar board">Board bar</nav>
-      <div className="board-columns">
-        <div className="column">
+    <div className='trello-master'>
+      <AppBar />
+      <nav className='navbar board'>Board bar</nav>
+      <div className='board-columns'>
+        <div className='column'>
           <header>Brainstorm</header>
           <ul>
             <li>
               <img
-                src="https://trello-attachments.s3.amazonaws.com/60c36c736347af8daffd86cb/60c36c736347af8daffd86fb/x/16a1a98fd3ed16ea6fb25b16168878e4/giphy.gif"
-                alt="alt-img"
+                src='https://trello-attachments.s3.amazonaws.com/60c36c736347af8daffd86cb/60c36c736347af8daffd86fb/x/16a1a98fd3ed16ea6fb25b16168878e4/giphy.gif'
+                alt='alt-img'
               />
               Title: MERN
             </li>
@@ -23,7 +25,7 @@ function App() {
           </ul>
           <footer>Add another card</footer>
         </div>
-        <div className="column">
+        <div className='column'>
           <header>Brainstorm</header>
           <ul>
             <li>
@@ -38,7 +40,7 @@ function App() {
           </ul>
           <footer>Add another card</footer>
         </div>
-        <div className="column">
+        <div className='column'>
           <header>Brainstorm</header>
           <ul>
             <li>
@@ -53,7 +55,7 @@ function App() {
           </ul>
           <footer>Add another card</footer>
         </div>
-        <div className="column">
+        <div className='column'>
           <header>Brainstorm</header>
           <ul>
             <li>
