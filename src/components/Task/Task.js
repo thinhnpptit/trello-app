@@ -1,14 +1,15 @@
 import React from 'react';
 import './Task.scss';
 
-const Task = () => {
+const Task = (props) => {
+  const { card } = props;
+
   return (
     <li>
-      <img
-        src='https://trello-attachments.s3.amazonaws.com/60c36c736347af8daffd86cb/60c36c736347af8daffd86fb/x/16a1a98fd3ed16ea6fb25b16168878e4/giphy.gif'
-        alt='alt-img'
-      />
-      Title: MERN
+      {card.cover && (
+        <img src={card.cover} className='card-cover' alt='image card' />
+      )}
+      {card.title}
     </li>
   );
 };
