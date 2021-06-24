@@ -15,37 +15,38 @@ export const initialData = {
               boardId: 'board-1',
               columnId: 'column-1',
               title: 'Title of card 1',
-              cover: null,
+              cover:
+                'https://i.pinimg.com/564x/b1/c3/c9/b1c3c94aaac42c1ea08e4a1ecbce65d6.jpg'
             },
             {
               id: 'card-2',
               boardId: 'board-2',
               columnId: 'column-1',
               title: 'Title of card 2',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-3',
               boardId: 'board-3',
               columnId: 'column-1',
               title: 'Title of card 3',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-4',
               boardId: 'board-4',
               columnId: 'column-1',
               title: 'Title of card 4',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-5',
               boardId: 'board-5',
               columnId: 'column-1',
               title: 'Title of card 5',
-              cover: null,
-            },
-          ],
+              cover: null
+            }
+          ]
         },
         {
           id: 'column-2',
@@ -58,23 +59,23 @@ export const initialData = {
               boardId: 'board-1',
               columnId: 'column-2',
               title: 'Title of card 6',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-2',
               boardId: 'board-1',
               columnId: 'column-2',
               title: 'Title of card 7',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-3',
               boardId: 'board-1',
               columnId: 'column-2',
               title: 'Title of card 8',
-              cover: null,
-            },
-          ],
+              cover: null
+            }
+          ]
         },
         {
           id: 'column-3',
@@ -87,32 +88,32 @@ export const initialData = {
               boardId: 'board-1',
               columnId: 'column-3',
               title: 'Title of card 9',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-10',
               boardId: 'board-1',
               columnId: 'column-3',
               title: 'Title of card 10',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-11',
               boardId: 'board-1',
               columnId: 'column-3',
               title: 'Title of card 11',
-              cover: null,
+              cover: null
             },
             {
               id: 'card-12',
               boardId: 'board-1',
               columnId: 'column-3',
               title: 'Title of card 12',
-              cover: null,
-            },
-          ],
-        },
-      ],
-    },
-  ],
-};
+              cover: null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

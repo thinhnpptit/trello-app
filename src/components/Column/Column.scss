@@ -5,6 +5,7 @@ $colunm-footer-height: 36px;
 $colunm-border-radius: 5px;
 
 .column {
+  margin: 0 10px;
   flex: 0 0 auto;
   width: 300px;
   height: calc(100% - #{$gap});
@@ -16,7 +17,7 @@ $colunm-border-radius: 5px;
     color: #333;
     padding: 0 8px;
   }
-  header {
+  header.column-drag-handle {
     padding-left: 15px;
     height: $colunm-header-height;
     line-height: $colunm-header-height;
@@ -24,6 +25,7 @@ $colunm-border-radius: 5px;
     font-weight: bold;
     border-top-left-radius: $colunm-border-radius;
     border-top-right-radius: $colunm-border-radius;
+    cursor: pointer;
   }
   footer {
     padding-left: 10px;
@@ -49,6 +51,27 @@ $colunm-border-radius: 5px;
     &::-webkit-scrollbar-thumb {
       background-color: rgba(0, 0, 0, 0.24);
       border-radius: 5px solid $list-bg-color;
+    }
+
+    .card-ghost {
+      transition: transform 0.18s ease;
+      transform: rotateZ(5deg);
+    }
+
+    .card-ghost-drop {
+      transition: transform 0.18s ease-in-out;
+      transform: rotateZ(0deg);
+    }
+    .drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px;
+    }
+
+    .cards-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px 45px 5px 5px;
     }
   }
 }
