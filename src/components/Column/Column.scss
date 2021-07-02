@@ -1,5 +1,4 @@
 @import '_setting.scss';
-$list-bg-color: #ebecf0;
 $colunm-header-height: 36px;
 $colunm-footer-height: 36px;
 
@@ -12,7 +11,7 @@ $colunm-footer-height: 36px;
     margin-left: 10px;
   }
   > * {
-    background-color: $list-bg-color;
+    background-color: $column-bg-color;
     padding: 0 8px;
   }
   header.column-drag-handle {
@@ -56,7 +55,7 @@ $colunm-footer-height: 36px;
     }
     &::-webkit-scrollbar-thumb {
       background-color: rgba(0, 0, 0, 0.24);
-      border-radius: 5px solid $list-bg-color;
+      border-radius: 5px solid $column-bg-color;
     }
 
     .card-ghost {
