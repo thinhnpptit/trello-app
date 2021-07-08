@@ -46,21 +46,6 @@
     border-radius: $colunm-border-radius;
     input.input-enter-new-column {
       margin-bottom: 5px 0;
-      &:focus {
-        border-color: $input-border-color;
-      }
-    }
-    .cancel-new-column {
-      margin-left: $gap;
-      cursor: pointer;
-      i {
-        font-size: 18px;
-        line-height: 18px;
-        color: $alert-danger;
-        &:hover {
-          color: darken($color: $alert-danger, $amount: 10);
-        }
-      }
     }
   }
 }
