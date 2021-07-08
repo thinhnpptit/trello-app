@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './BoardContent.scss'
 import Column from 'components/Column/Column'
 import {
@@ -23,9 +23,9 @@ export default function BoardContent() {
 
   const newColumnInputRef = useRef(null)
 
-  const onNewColumnTitleChange = useCallback((e) => {
+  const onNewColumnTitleChange = (e) => {
     setNewColumnTitle(e.target.value)
-  }, [])
+  }
 
   useEffect(() => {
     const boardFromDB = initialData.boards.find(
@@ -184,10 +184,7 @@ export default function BoardContent() {
               <Button variant='success' size='sm' onClick={addNewColumn}>
                 Add column
               </Button>
-              <span
-                className='cancel-new-column'
-                onClick={toggleOpenNewColumnForm}
-              >
+              <span className='cancel-icon' onClick={toggleOpenNewColumnForm}>
                 <i className='fa fa-trash icon'></i>
               </span>
             </Col>
