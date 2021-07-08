@@ -45,7 +45,10 @@
     margin-left: $gap;
     border-radius: $colunm-border-radius;
     input.input-enter-new-column {
-      margin-bottom: 5px;
+      margin-bottom: 5px 0;
+      &:focus {
+        border-color: $input-border-color;
+      }
     }
     .cancel-new-column {
       margin-left: $gap;
